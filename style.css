@@ -58,7 +58,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #f8f8f8 0%, #e8e8e8 100%);
+    background-image: url("/layla-lead-hub/images/hero-bg.png");
     padding: 120px 0 80px;
     margin-top: 70px;
 }

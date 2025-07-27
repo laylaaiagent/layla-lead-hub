@@ -62,7 +62,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 120px 0 80px;
+    padding: 150px 0 120px; /* Increased from 120px 0 80px */
     margin-top: 70px;
     position: relative;
 }
@@ -134,14 +134,13 @@ body {
 
 @media (max-width: 480px) {
     .hero {
-        padding: 100px 0 60px;
+        padding: 120px 0 80px; /* Increased from 100px 0 60px */
     }
     
     .hero-text h1 {
         font-size: 2rem;
     }
 }
-
 /* Contact Form Section */
 .contact-form-section {
     background-color: #fff;

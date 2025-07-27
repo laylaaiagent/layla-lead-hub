@@ -1,5 +1,3 @@
-
-/* Reset + Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -37,13 +35,8 @@ body {
     padding: 15px 20px;
 }
 
-.logo-placeholder {
-    background-color: #333;
-    color: #D4AF37;
-    padding: 10px 15px;
-    font-weight: bold;
-    font-size: 14px;
-    border-radius: 4px;
+.logo img {
+    height: 40px; /* Adjust as needed */
 }
 
 .nav ul {
@@ -92,16 +85,11 @@ body {
     margin-bottom: 30px;
 }
 
-.hero-image-placeholder {
-    background-color: #ddd;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
-    color: #888;
-    font-size: 1.2rem;
-    border: 2px dashed #bbb;
 }
 
 /* Contact Form Section */

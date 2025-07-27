@@ -111,6 +111,11 @@ body {
     display: none;
 }
 
+/* Header Logo - Increased Size */
+.logo img {
+    height: 60px; /* Increased from 40px to 60px */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .hero-content {
@@ -120,6 +125,10 @@ body {
     
     .hero-text h1 {
         font-size: 2.5rem;
+    }
+    
+    .logo img {
+        height: 50px; /* Slightly smaller on mobile */
     }
 }
 

@@ -129,12 +129,14 @@ body {
 }
 
 .primary-btn {
-    background-color: #c29d59;
-    color: white;
+    background-color: transparent;
+    color: #c29d59;
+    border: 2px solid #c29d59;
 }
 
 .primary-btn:hover {
-    background-color: #a68548;
+    background-color: #c29d59;
+    color: white;
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(194, 157, 89, 0.3);
 }

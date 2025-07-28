@@ -106,6 +106,52 @@ body {
     margin-bottom: 30px;
 }
 
+/* Hero Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.hero-btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 200px;
+}
+
+.primary-btn {
+    background-color: #c29d59;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #a68548;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(194, 157, 89, 0.3);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #c29d59;
+    border: 2px solid #c29d59;
+}
+
+.secondary-btn:hover {
+    background-color: #c29d59;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(194, 157, 89, 0.3);
+}
+
 /* Hide or remove the hero image since we want full-width content */
 .hero-image {
     display: none;
@@ -160,6 +206,19 @@ body {
         font-size: 2.5rem;
     }
     
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+    
+    .hero-btn {
+        min-width: auto;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
     .logo img {
         height: 50px; /* Slightly smaller on mobile */
     }
@@ -177,7 +236,13 @@ body {
     .hero-text h1 {
         font-size: 2rem;
     }
+    
+    .hero-btn {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
 }
+
 /* Contact Form Section */
 .contact-form-section {
     background-color: #fff;

@@ -258,27 +258,52 @@ body {
     margin-bottom: 50px;
 }
 
-.contact-form {
-    max-width: 500px;
+.form-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    max-width: 1000px;
     margin: 0 auto;
+}
+
+.form-container {
+    max-width: 450px;
+}
+
+.contact-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form select {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
+    background-color: #fff;
 }
 
 .contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form select:focus {
     outline: none;
     border-color: #D4AF37;
+}
+
+.contact-form select {
+    cursor: pointer;
+    color: #666;
+}
+
+.contact-form select:valid {
+    color: #000;
+}
+
+.contact-form select option {
+    color: #000;
 }
 
 .submit-btn {
@@ -294,6 +319,67 @@ body {
 
 .submit-btn:hover {
     background-color: #B8941F;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layla-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.layla-image:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .contact-form-section h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .form-container {
+        max-width: 100%;
+        order: 2;
+    }
+    
+    .image-container {
+        order: 1;
+    }
+    
+    .layla-image {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form-section {
+        padding: 60px 0;
+    }
+    
+    .contact-form-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .layla-image {
+        max-width: 250px;
+        border-radius: 15px;
+    }
 }
 
 /* Assistance Section */

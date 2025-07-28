@@ -252,10 +252,10 @@ body {
 }
 
 .contact-form-section h2 {
-    text-align: center;
     font-size: 2.5rem;
     color: #D4AF37;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    text-align: left;
 }
 
 .form-content {
@@ -381,7 +381,6 @@ body {
         border-radius: 15px;
     }
 }
-
 /* Assistance Section */
 .assistance-section {
     background-color: #f8f8f8;

@@ -130,12 +130,12 @@ body {
 
 .primary-btn {
     background-color: transparent;
-    color: #c29d59;
-    border: 2px solid #c29d59;
+    color: #bf9b37;
+    border: 2px solid #bf9b37;
 }
 
 .primary-btn:hover {
-    background-color: #c29d59;
+    background-color: #bf9b37;
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(194, 157, 89, 0.3);
@@ -143,12 +143,12 @@ body {
 
 .secondary-btn {
     background-color: transparent;
-    color: #c29d59;
-    border: 2px solid #c29d59;
+    color: #bf9b37;
+    border: 2px solid #bf9b37;
 }
 
 .secondary-btn:hover {
-    background-color: #c29d59;
+    background-color: #bf9b37;
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(194, 157, 89, 0.3);

@@ -382,22 +382,41 @@ body {
     }
 }
 /* Assistance Section */
+.assistance-section {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.assistance-section h2 {
+    font-size: 2rem;
+    color: #D4AF37;
+    margin-bottom: 20px;
+}
+
+.assistance-section p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .whatsapp-btn {
     background-color: #25D366;
     color: white;
-    padding: 14px 28px;
-    font-size: 1.1rem;
-    border-radius: 8px;
+    padding: 15px 30px;
     text-decoration: none;
-    transition: all 0.3s ease;
+    border-radius: 5px;
+    font-size: 1.1rem;
     display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
 .whatsapp-btn:hover {
-    background-color: #1ebe5b;
+    background-color: #1DA851;
 }
-
-
 /* Starter Kit Section */
 .starter-kit-section {
     background-color: #fff;

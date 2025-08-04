@@ -97,6 +97,7 @@
                         <li>Financing options and payment plans</li>
                         <li>Step-by-step buying process</li>
                     </ul>
+                    <button id="open-ebook-modal-btn" class="download-btn">Download Your Free Starter Kit</button>
                 </div>
             </div>
         </div>
@@ -196,5 +197,31 @@
             </div>
         </div>
     </footer>
+    <!-- eBook Pop-up Modal -->
+        <div id="ebook-modal" class="modal-overlay">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                
+                <!-- PASTE YOUR EMBED CODE HERE -->
+                <script src="https://js-na2.hsforms.net/forms/embed/243444963.js" defer></script>
+                <div class="hs-form-frame" data-region="na2" data-form-id="9fad2de5-c60e-4d10-8c5a-05258ff19050" data-portal-id="243444963"></div>
+
+            </div>
+        </div>
+
+        <!-- JavaScript to control the pop-up -->
+        <script>
+            var modal = document.getElementById("ebook-modal" );
+            var btn = document.getElementById("open-ebook-modal-btn");
+            var span = document.getElementsByClassName("close-button")[0];
+
+            btn.onclick = function() { modal.style.display = "block"; }
+            span.onclick = function() { modal.style.display = "none"; }
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
 </body>
 </html>

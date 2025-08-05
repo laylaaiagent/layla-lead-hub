@@ -630,6 +630,7 @@ body {
   align-items: center;
   cursor: pointer;
   outline: none;
+  flex-direction: row-reverse;  
 }
 
 .faq-question .icon {

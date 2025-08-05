@@ -605,7 +605,7 @@ body {
 <!-- FAQ Section -->
 .faq-main-section {
   padding: 80px 20px;
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
 .faq-main-section h2 {
@@ -656,9 +656,9 @@ body {
 
 /* Stay Connected Section */
 .stay-connected-section {
-    background-color: #fff;
+    background-color: #f8f8f8;
     padding: 120px; 
-    padding-bottom: 80px;  
+    padding-bottom: 120px;  
 }
 
 .stay-connected-section h2 {

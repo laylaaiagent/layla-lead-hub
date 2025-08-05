@@ -617,6 +617,8 @@ body {
 .faq-accordion .faq-item {
   border-bottom: 1px solid #ddd;
   padding: 20px 0;
+  border-left: 3px solid #D4AF37;
+  position: relative; 
 }
 
 .faq-question {
@@ -630,7 +632,8 @@ body {
   align-items: center;
   cursor: pointer;
   outline: none;
-  flex-direction: row-reverse;  
+  flex-direction: row-reverse;
+  padding-left: 15px;
 }
 
 .faq-question .icon {

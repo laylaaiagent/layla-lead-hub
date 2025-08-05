@@ -668,11 +668,12 @@ body {
     margin-bottom: 50px;
 }
 
+
 .connected-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    max-width: 600px; /* Or a width that you think looks good */
+    margin: 0 auto; /* This will center the block */
 }
+
 
 .instagram-section h3,
 .faq-section h3 {

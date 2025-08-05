@@ -131,6 +131,80 @@
 
     </section>
 
+    <!-- FAQ Section -->
+    <section class="faq-main-section">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-accordion">
+    
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="icon">+</span> Is now a good time to invest in Dubai real estate?
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. Dubai is experiencing a unique window of opportunity — driven by population growth, global investor interest, and high rental yields. If you’re looking for long-term value and lifestyle upside, it’s an excellent time.</p>
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="icon">+</span> What are the best areas for rental returns in Dubai?
+            </button>
+            <div class="faq-answer">
+              <p>JVC, Dubai Marina, Business Bay, and International City consistently offer attractive rental yields. The sweet spot? Properties priced between AED 1M–2M with strong tenant demand and low vacancy risk.</p>
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="icon">+</span> Can foreigners legally buy property in Dubai?
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Dubai has designated freehold zones where foreigners can own 100% of the property — no local sponsor required. Areas like Downtown, Palm Jumeirah, Dubai Hills, and JVC are popular among expats.</p>
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="icon">+</span> What are the pros and cons of buying an apartment in Dubai as an expat?
+            </button>
+            <div class="faq-answer">
+              <p>Pros: Full ownership rights, strong ROI, Golden Visa eligibility, tax-free income.  
+              Cons: Service charges can vary, and off-plan timelines may shift. That’s where expert guidance makes a difference — and Layla is built to simplify it for you.</p>
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="icon">+</span> What should I check before booking an off-plan villa?
+            </button>
+            <div class="faq-answer">
+              <p>Always verify the developer’s track record, RERA registration, payment plan structure, handover date, and post-handover support. Layla can also run a background check on any developer before you commit.</p>
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="icon">+</span> What’s the average rental price for an apartment in Dubai?
+            </button>
+            <div class="faq-answer">
+              <p>It depends on the location. On average, a 1-bedroom apartment ranges between AED 55K to AED 100K annually. Waterfront or central locations tend to command higher rents — but also offer better returns.</p>
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="icon">+</span> How do I start working with Layla AI?
+            </button>
+            <div class="faq-answer">
+              <p>Simple. Tap the WhatsApp button, tell Layla your budget or goal, and she’ll guide you from discovery to deal — with zero pressure. Think of her as your always-on, always-objective property advisor.</p>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+
     <!-- Stay Connected Section -->
     <section class="stay-connected-section">
         <div class="container">
@@ -143,26 +217,6 @@
                         <div class="instagram-post"></div>
                         <div class="instagram-post"></div>
                         <div class="instagram-post"></div>
-                    </div>
-                </div>
-                <div class="faq-section">
-                    <h3>Featured Quora Answers</h3>
-                    <div class="faq-list">
-                        <div class="faq-item">
-                            <p>Is now a good time to invest in Dubai's off-plan properties?</p>
-                        </div>
-                        <div class="faq-item">
-                            <p>What are the best areas for rental yield in Dubai in 2023?</p>
-                        </div>
-                        <div class="faq-item">
-                            <p>How does Dubai's Golden Visa program work for property investors?</p>
-                        </div>
-                        <div class="faq-item">
-                            <p>What should foreign investors know about Dubai's property laws?</p>
-                        </div>
-                        <div class="faq-item">
-                            <p>How fast is the real estate tax can be formed into guidelines?</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -224,5 +278,32 @@
                 }
             }
         </script>
+        <script>
+            document.querySelectorAll(".faq-question").forEach((btn) => {
+            btn.addEventListener("click", function () {
+              const answer = this.nextElementSibling;
+              const icon = this.querySelector(".icon");
+        
+              // Close all other answers
+              document.querySelectorAll(".faq-answer").forEach((el) => {
+                if (el !== answer) el.style.display = "none";
+              });
+        
+              document.querySelectorAll(".faq-question .icon").forEach((ic) => {
+                if (ic !== icon) ic.textContent = "+";
+              });
+        
+              // Toggle current answer
+              if (answer.style.display === "block") {
+                answer.style.display = "none";
+                icon.textContent = "+";
+              } else {
+                answer.style.display = "block";
+                icon.textContent = "–";
+              }
+            });
+          });
+        </script>
+
 </body>
 </html>

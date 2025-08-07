@@ -230,9 +230,8 @@
             <div class="connected-content">
                 <div class="instagram-section">
                     <h3>Latest from Instagram</h3>
-                    <!-- LightWidget WIDGET -->
-                    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-                    <iframe src="//lightwidget.com/widgets/997db13a26685a35b63d7d84d6c0bd69.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+                    <div id="curator-feed-default-feed-layout">
+                        <a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
                 </div>
             </div>
         </div>
@@ -319,6 +318,13 @@
             });
           });
         </script>
-
+        <script type="text/javascript">
+        /* curator-feed-default-feed-layout */
+        (function(){
+        var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+        i.src="https://cdn.curator.io/published/f1038a2b-cc62-4160-82d7-fdd2eb85a23e.js";
+        e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+        })();
+        </script>
 </body>
 </html>
